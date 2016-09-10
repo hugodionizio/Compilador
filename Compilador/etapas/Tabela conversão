@@ -1,0 +1,6 @@
+or	R1	R2	R3	#0....a [n(last OP code) + i] [n(last OP code) + j] [n(last OP code) + k], a,i,j,k > 0	0xu
+and	R1	R2	R3	#0....b [n(last OP code) + i] [n(last OP code) + j] [n(last OP code) + k], b,i,j,k > 0	0xv
+not	R1	R2		#0....c [n(last OP code) + i] [n(last OP code) + j], c,i,j > 0				0xw
+sb	R1
+lb	R1
+j	R1
