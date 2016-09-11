@@ -18,22 +18,7 @@
  * along with CompiladorPortugolG. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#define TAMBUFF 100
-
-typedef enum boolean {
-	false,
-	true
-} boolean;
-typedef boolean bool;
-
-typedef struct Teste {
-	int num;
-	char ch;
-} Teste;
+#include "montador.h"
 
 boolean converter(FILE *asmFile, FILE *binFile, char *asmName) {
 	bool sucess = true, novaIteracao = true;
@@ -88,7 +73,7 @@ int _converter(FILE *asmFile, FILE *binFile, char *asmName) {
 	return sucess;
 }
 
-int main (int argc, char *argv[]) {
+int mainMontador (int argc, char *argv[]) {
 	FILE *asmFile;
 	FILE *binFile;
 	

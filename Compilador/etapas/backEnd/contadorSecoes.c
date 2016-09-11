@@ -7,7 +7,7 @@
 #include <link.h>
 #include <elf.h>
 
-int main(int argc, char **argv) {
+int mainCountSection(int argc, char **argv) {
 	ElfW(Ehdr) *header;
 	unsigned char *mem;
 	struct stat st;
